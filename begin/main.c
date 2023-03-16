@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <inttypes.h>
 
 int main(void)
 {
@@ -81,6 +82,38 @@ int main(void)
   // printf("end = %hd and %d\n", end, end);                  // %h转short
   // printf("big = %ld and not %hd\n", big, big);             // %l转long
   // printf("verybig= %lld and not %ld\n", verybig, verybig); // %ll转long long
+
+  // char grade = 'A';
+  // printf("%d \n", grade);
+  // char ch;
+  // printf("Please enter a character.\n");
+  // scanf("%c", &ch);
+  // printf("The code for %c is %d. \n", ch, ch);
+
+  // _Bool trust = 0;
+  // printf("%d \n", trust);
+  // int32_t me32; // me32是一个32位有符号整型变量
+  // me32 = 45933945;
+  // printf("First,assume int32_t is int: ");
+  // printf("me32 = %d\n", me32);
+  // printf("Next, let's not make any assumptions.\n");
+  // printf("Instead, use a \"macro\" from inttypes.h: ");
+  // printf("me32 = %" PRId32 "\n", me32);
+
+  // float cFloat = 32000.0;
+  // double cDouble = 2.14e9;
+  // long double dip = 3.23e-5;
+  // printf("%f can be writen %e\n", cFloat, cFloat);
+  // printf("%f can be writen %e\n", cDouble, cDouble);
+  // printf("%Lf can be writen %Le\n", dip, dip);
+
+  // float toobig = 3.4E38 * 100.0f;
+  // printf("%e\n", toobig);
+
+  float a, b;
+  b = 2.0e3 + 1.0;
+  a = b - 2.0e3;
+  printf("%f \n", a);
 
   return 0;
 }
