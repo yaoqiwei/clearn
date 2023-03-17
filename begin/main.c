@@ -115,5 +115,31 @@ int main(void)
   // a = b - 2.0e3;
   // printf("%f \n", a);
 
+  // printf("Type int  has size of %zd bytes. \n", sizeof(int));
+  // printf("Type char  has size of %zd bytes. \n", sizeof(char));
+  // printf("Type long  has size of %zd bytes. \n", sizeof(long));
+  // printf("Type long long  has size of %zd bytes. \n", sizeof(long long));
+  // printf("Type double  has size of %zd bytes. \n", sizeof(double));
+  // printf("Type long double  has size of %zd bytes. \n", sizeof(long double));
+
+  // int cost = 12.99;
+  // float pi = 3.1415926536;
+  // printf("%d \n %f", cost, pi);
+  // 参数和陷阱
+  // int n = 4;
+  // int m = 5;
+  // float f = 7.0f;
+  // float g = 8.0f;
+  // printf("%d\n", n, m);
+  // printf("%d %d %d \n", n);
+  // printf("%d %d \n", m, g);
+
+  float salary;
+  printf("\a Enter your desired monthly salary.");
+  printf("$___\b\b\b\b");
+  scanf("%f", &salary);
+  printf("\n\t$%.2f a month is $%.2f a year.", salary,
+         salary * 12.0);
+
   return 0;
 }
