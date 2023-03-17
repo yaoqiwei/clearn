@@ -110,10 +110,10 @@ int main(void)
   // float toobig = 3.4E38 * 100.0f;
   // printf("%e\n", toobig);
 
-  float a, b;
-  b = 2.0e3 + 1.0;
-  a = b - 2.0e3;
-  printf("%f \n", a);
+  // float a, b;
+  // b = 2.0e3 + 1.0;
+  // a = b - 2.0e3;
+  // printf("%f \n", a);
 
   return 0;
 }
